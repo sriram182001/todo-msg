@@ -1,0 +1,22 @@
+.AddTodo{
+  background: rgb(10,10,10);
+  background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(16,43,107,1) 100%, rgba(249,252,255,1) 100%);
+}
+.form-control1{
+  border-top: 10px;
+}
+.forms{
+    padding-top: 130px;
+    min-height: 85vh;
+}
+#task{
+  border-radius: 5px;
+  /* padding-left: 100px;
+  padding-right: 150px; */
+  width: 95%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left:0px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+}

@@ -1,0 +1,40 @@
+/* .btn{
+    color: black;
+    width: 80px;
+    height: 30px;
+    color: azure;
+    float: right;
+    
+}  */
+.Mspc{
+    min-height: 100vh;
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(16,43,107,1) 100%, rgba(249,252,255,1) 100%);
+    color: white;
+} 
+#wel2{
+    text-align: center;
+    color: chartreuse;
+}
+#wel3{
+    text-align: center;
+    color: white;
+    
+}
+.loader {
+    position: absolute;
+    left: 45%;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 0.5s linear infinite;
+    
+  }
+
+  
+   @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } 

@@ -1,0 +1,21 @@
+.CreateMsg{
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(16,43,107,1) 100%, rgba(249,252,255,1) 100%);
+    
+}
+.forms1{
+    
+    padding-top: 25px;
+    height: 78vh;
+}
+#msg1{
+    border-radius: 5px;
+    /* padding-left: 100px;
+    padding-right: 150px; */
+    width: 95%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:0px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+  }

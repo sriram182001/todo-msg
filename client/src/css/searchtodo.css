@@ -1,0 +1,17 @@
+.searchTodo{
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(16,43,107,1) 100%, rgba(249,252,255,1) 100%);
+    
+    min-height: 100vh;
+}
+#edit-tasks{
+    background: rgb(26,27,28);
+    background: linear-gradient(90deg, rgba(26,27,28,1) 3%, rgba(10,77,186,1) 29%, rgb(183, 4, 237) 100%);
+    margin-left: 3.5%;
+    width: 70%;
+    height: 5vh;
+    border-radius: 10px;
+    color: azure;
+    font-size: larger;
+    text-align: center;
+}

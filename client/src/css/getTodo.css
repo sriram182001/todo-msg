@@ -1,0 +1,45 @@
+.GetTodo{
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(16,43,107,1) 100%, rgba(249,252,255,1) 100%);
+    color: white;
+    min-height: 100vh;
+    
+}
+.btn-btn{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: red;
+    color:honeydew;
+    font-size: larger;
+    float: right;
+    
+}
+.tasks{
+    background: rgb(26,27,28);
+    background: linear-gradient(90deg, rgba(26,27,28,1) 3%, rgba(10,77,186,1) 29%, rgb(183, 4, 237) 100%);
+    color:black;
+    border-radius: 20px;
+}
+.para{
+   
+   font-size: large;
+   padding-top: 50px;
+   font-size:x-large;
+   text-align: center;
+   color: azure;
+   padding-right: 50px;
+   padding-bottom: 20px;
+   margin-top: 3%;
+}
+p{
+    text-align: center;
+}
+#no{
+    float:left;
+    padding-left: 3%;
+    color: chartreuse;
+}
+
+
