@@ -29,7 +29,7 @@ module.exports.UpdateTask=async(request,reply)=>{
         const r=await model.task.findOne({where:{id:request.payload.edit.id}});
         const results=JSON.parse(JSON.stringify(r));
         console.log(results);
-        updateJob.add({data:results,id:request.payload.edit.id},{removeOnComplete:true}).then(()=>console.log('task added to update queue'));
+        updateJob.add({data:results,id:request.payload.edit.id},/* {removeOnComplete:true} */).then(()=>console.log('task added to update queue'));
         await del.Del(`user_${request.auth.credentials.uid}`);
         reply(['updated',results]);
     } catch (error) {

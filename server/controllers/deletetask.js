@@ -32,7 +32,7 @@ DQ.process(async(job,done)=>{
 });
 module.exports.DeleteTask=async(request,reply)=>{
     try {
-        await DQ.add({data:request.payload.id},{removeOnComplete:true});
+        await DQ.add({data:request.payload.id},/* {removeOnComplete:true} */);
         await model.task.destroy({where:{id:request.payload.id}});
         await del.Del(`user_${request.auth.credentials.uid}`);
         reply('deleted');

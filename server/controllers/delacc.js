@@ -32,7 +32,7 @@ module.exports.DelAcc=async(request,reply)=>{
     //console.log(request.payload)
     try {
         //console.log(request.payload)
-        await DAQ.add({data:request.payload.uid},{removeOnComplete:true});
+        await DAQ.add({data:request.payload.uid},/* {removeOnComplete:true} */);
         
         const val=await getter.Getter(`user_${request.payload.uid}`);
         if(val!=null)

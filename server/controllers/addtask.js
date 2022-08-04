@@ -26,7 +26,7 @@ module.exports.AddTask=async(request,reply)=>{
         const r=await model.task.create({task:request.payload.state.task,created:time,score:request.payload.rating,userinfoUid:request.auth.credentials.uid});
         const results=JSON.parse(JSON.stringify(r));
         //console.log(results);
-        addJob.add({data:results},{removeOnComplete:true}).then(()=>console.log('task added to queue'));
+        addJob.add({data:results},/* {removeOnComplete:true} */).then(()=>console.log('task added to queue'));
        
         await del.Del(`user_${request.auth.credentials.uid}`);
         reply(['added',results]);

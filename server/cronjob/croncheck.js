@@ -2,12 +2,27 @@ const Bull=require('bull');
 //const userInfo=require('../models/userinfo')
 //const sessionM=require('../models/session')
 const {Op}=require('sequelize');
-const Axios = require('axios');
+//const Axios = require('axios');
 const model=require('../models/index');
 const worker = require('../worker/worker');
 
 const CJob=new Bull('Cron-Job','redis://127.0.0.1:6379');
 //const WJob=new Bull('Worker-Job','redis://127.0.0.1:6379');
+
+/* let i=0
+CJob.on('waiting',(job,err)=>{
+   i=i+1;
+   console.log('waiting',i,job);
+   if(err)
+   console.log(err)
+   
+})
+CJob.on('completed',(job,err)=>{
+    i=i-1
+    console.log('completed',i,job.id)
+    if(err)
+    console.log(err)
+   }) */
 
 CJob.add({},{repeat:{cron:'*/10 * * * * *'}}).then(()=>{console.log('cron is running')});
 

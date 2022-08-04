@@ -21,5 +21,5 @@ WJob.process(async(job,done)=>{
    
 })
 module.exports=(data)=>{
-    WJob.add({user:data},{removeOnComplete: true}).then(()=>{console.log("added to worker")});
+    WJob.add({user:data},/* {removeOnComplete: true} */).then(()=>{console.log("added to worker")});
 }

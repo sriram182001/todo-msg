@@ -46,7 +46,7 @@ EQ.process(async (job,done)=>{
 module.exports.GetTaskElastic=async(request,reply)=>{
     try{
     //console.log(request.payload.state.input)
-    const job=await EQ.add({data:request.payload.state.input,uid:request.auth.credentials.uid},{removeOnComplete:true});
+    const job=await EQ.add({data:request.payload.state.input,uid:request.auth.credentials.uid},/* {removeOnComplete:true} */);
     const res=await job.finished()
     res.map(item=>item._source.task=item._source.task.toUpperCase())
     console.log(res)
